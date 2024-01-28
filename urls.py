@@ -1,5 +1,5 @@
 """
-URL configuration for cn334 project.
+URL configuration for CN334 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,17 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ecommerce import views as ecom_views
 
-urlpatterns =[
-
+urlpatterns = [
     path('admin/', admin.site.urls),
-    path("ecommerce/", ecom_views.ecommerce_index_view),
-    path("ecommerce/item/<item_id>", ecom_views.item_view),
-    path("ecommerce/Homepage", ecom_views.Homepage),
-    path("ecommerce/Contactpage", ecom_views.Contactpage),
-    path("ecommerce/Categorypage", ecom_views.Categorypage),
-    path("ecommerce/Checkoutpage", ecom_views.Checkoutpage),
-    path("ecommerce/Productpage", ecom_views.Productpage)
-    
 ]
